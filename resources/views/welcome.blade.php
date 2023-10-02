@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <title>Laravel 9 vite with react</title>
-        <link href="{{ mix('resources/css/app.css') }}" rel="stylesheet">
+        <title>DaDevCoder</title>
+        <link href="{{ asset('resources/css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('node_modules/toastr/toastr.scss') }}" rel="stylesheet">
 
 
