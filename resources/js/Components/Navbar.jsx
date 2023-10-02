@@ -1,0 +1,188 @@
+import React, { useState, useEffect } from 'react';
+import { mylogo, handpointer } from '@/assets';
+import { Link } from 'react-router-dom';
+import Hamburger from 'hamburger-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import $ from 'jquery';
+import axios from 'axios';
+import toastr from 'toastr';
+import 'toastr/toastr.scss';
+
+
+toastr.options = {
+  "positionClass": "top-right-center",
+  "preventDuplicates": true,
+  "closeButton": true,
+  "progressBar": true
+}
+const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
+  const [contactme, setContactMe] = useState(false);
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const cursorWidth = window.innerWidth;
+  const cursorHeight = window.innerHeight;
+  console.log(`Screen Width: ${cursorWidth}px`);
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  }
+
+  useEffect(() => {
+    $(window).on('mousemove', handleMouseMove);
+
+    return () => {
+      $(window).off('mousemove', handleMouseMove);
+    }
+  }, []);
+
+  let centerPosition = {
+    x: cursorPosition.x - cursorWidth /6,
+    y: cursorPosition.y - cursorHeight /1.28,
+  };
+
+
+
+
+  const openContact = () => {
+    setContactMe(true);
+    $('*').css('cursor', 'none');
+  }
+
+  const closeContact = () => {
+    setContactMe(false);
+    $('*').css('cursor', 'auto');
+  }
+  const Submission = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    // const data = {
+    //   name: formData.get('names'),
+    //   email: formData.get('emails'),
+    //   message: formData.get('messages')
+    // };
+
+    // console.log(data);
+    axios.post('/{any}/contact', formData)
+    .then((response) => {
+      console.log(response.data);
+      toastr.success('Your form is submitted and he will be informed and Email you back');
+    })
+    .catch((err) => {
+      console.log(err);
+      toastr.error("Error");
+    });
+  }
+
+
+
+
+  return (
+    <>
+      <div className='w-full p-8 bg-black text-white flex font-bold'>
+        <div className="w-full ml-12">
+          <img className='rounded-full w-12 h-12' src={mylogo} alt="sample" />
+        </div>
+        <div className="w-full md:flex hidden justify-end items-center ">
+          <div className=" bg-[#EEB722] rounded-lg">
+            <Hamburger toggled={isOpen} color='black' rounded toggle={setOpen} />
+          </div>
+        </div>
+        {isOpen && <div className=' w-1/4 bg-gray-400 h-[20vh] fixed top-[10%] right-10'>Your content here</div>}
+        <div className="w-full space-x-16 justify-center items-center flex md:hidden ">
+          <Link className='hover:border-b border-yellow-500' to="/"><h5>INTRO</h5></Link>
+          <Link className='hover:border-b border-yellow-500' to="/about"><h5>WHO</h5></Link>
+          <Link className='hover:border-b border-yellow-500' to="/tools"><h5>TOOLS</h5></Link>
+          <div className="">
+            <button onClick={openContact} className='text-[0.8rem] p-2 rounded-lg bg-[#EEB722] text-black '>Contact Me</button>
+          </div>
+        </div>
+
+      </div>
+
+      <AnimatePresence>
+        {contactme && (
+
+          <motion.div
+            initial={{ scaleY: 0, opacity: 0 }}
+            animate={{ scaleY: 1, opacity: 1 }}
+            exit={{ scaleY: 0, opacity: 0 }}
+            transition={{
+              duration: 2,
+              delay: 0.2,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+            className="w-[90vw] z-40 border border-black bg-white h-[80vh] fixed left-[5vw] rounded-lg p-2 shadow-custom2 top-[15%] block"
+          >
+
+            <div className="w-full p-4 flex justify-end ">
+              <motion.button
+                onClick={closeContact}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className='text-black cursor-none'
+              >
+                X
+              </motion.button>
+
+            </div>
+            <div className="w-full flex flex-col items-center justify-center space-y-12 ">
+
+              <div className="text-black "> <h2>CONTACT ME</h2></div>
+
+                <div className="w-1/2">
+
+                <form onSubmit={Submission} className='flex flex-col items-center space-y-6 cursor-none text-black'>
+                  <input name='names' className='rounded-lg cursor-none' type="text" placeholder='Name' />
+                  <input name='emails' className='rounded-lg cursor-none' type="text" placeholder='Email' />
+                  <textarea name="messages" cols="50" rows="5" placeholder='Message' className='cursor-none'></textarea>
+                  <motion.input
+                    whileHover={{scale: 1.1}}
+                    transition={{
+                      duration: 1.5,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}
+                    type="submit" className='p-2 w-[8vw] border bg-yellow-500 rounded-lg cursor-none'
+                  />
+                </form>
+
+                </div>
+                <div className="text-black nintendo hover:text-red-500 text-center w-3/4 h-[10vh]  relative">
+                <motion.img
+                animate={{ cursorPosition }}
+                transition={{
+                  duration:2,
+                  delay:0.3,
+                  ease: [0, 0.71, 0.2, 1.01]
+
+                }}
+
+                className='md:h-[20vh] md:w-[10vw] h-[25vh] grayscale rotate-[330deg] z-30 ' src={handpointer} alt="Cursor" style={{ position: 'absolute', left: centerPosition.x, top: centerPosition.y, pointerEvents: 'none' }} />
+
+                <motion.div
+                     whileHover={{scale:1.1}}
+                     transition={{
+                       duration:1.2,
+
+                       ease: [0, 0.71, 0.2, 1.01]
+
+                     }}
+                className="">
+                  <span>andredandayaganon@gmail.com</span>
+                </motion.div>
+              </div>
+
+
+              </div>
+              <div className="absolute right-[0.1vw] bottom-0 triangle-bottomleft3"></div>
+          </motion.div>
+
+        )}
+      </AnimatePresence>
+
+
+    </>
+  )
+}
+
+export default Navbar;

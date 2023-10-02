@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./sample.css">
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="custom-cursor">
+                <h1>adlaskjdlkasjd</h1>
+        </div>
+        <script>
+            // Create a custom cursor element
+            const customCursor = document.createElement('div');
+            customCursor.className = 'custom-cursor';
+            customCursor.style.width = '32px';
+            customCursor.style.height = '32px';
+            customCursor.style.backgroundImage = 'url("../assets/handcursor.png")'; // Replace with your image URL
+            customCursor.style.position = 'fixed';
+            document.body.appendChild(customCursor);
+
+            // Track mouse movement and update custom cursor position
+            document.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                customCursor.style.left = mouseX + 'px';
+                customCursor.style.top = mouseY + 'px';
+            });
+        </script>
+    </body>
+</html>

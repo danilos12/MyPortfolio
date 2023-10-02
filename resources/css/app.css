@@ -1,0 +1,196 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+.general-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.nintendo {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.tlsize{
+  font-size: 30rem;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3.5rem;
+
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+}
+h5{
+    font-size: 0.8rem;
+}
+
+
+.swiper-slide img{
+    width: 200px;
+    height: 250px;
+}
+.swiper-blur-container {
+    position: relative;
+
+  }
+
+  .swiper-blur-container::before,
+  .swiper-blur-container::after {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 400px; /* Adjust the width of the blurred area */
+    height: 100%;
+    backdrop-filter: blur(2px); /* Adjust the blur value as needed */
+
+  }
+
+  .swiper-blur-container::before {
+    z-index: 2;
+    left: 0;
+  }
+
+  .swiper-blur-container::after {
+    z-index: 1;
+    right: 0;
+    left: auto;
+  }
+  .shadow-custom {
+    filter: drop-shadow(0.50rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3));
+  }
+  .shadow-custom2 {
+    filter: drop-shadow(0.90rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3));
+  }
+
+  .rectangle {
+
+    height: 6px;
+
+    background: white;
+  }
+
+  .triangle-bottomleft {
+    width: 0;
+    height: 0;
+    transform:  scaleY(-1);
+    border-style: solid;
+    border-width: 100px 1000px 0px 0px;
+    border-color: #EEB722 transparent transparent transparent;
+  }
+  .triangle-bottomleft2 {
+
+    width: 0;
+    height: 0;
+    transform: scaleX(-1) scaleY(-1);
+    border-style: solid;
+    border-width: 90vh 100vw 0px 0px;
+    border-color: #EEB722 transparent transparent transparent;
+  }
+  .triangle-bottomleft3 {
+    z-index: -1;
+    width: 0;
+    height: 0;
+    transform: scaleX(-1) scaleY(-1);
+    border-style: solid;
+    border-width: 40vh 90vw 0px 0px;
+    border-color: rgb(236, 236, 236) transparent transparent transparent;
+  }
+
+
+
+  .circle {
+    width: 1071px;
+    height: 889px;
+    background: #EEB722;
+    border-radius: 50%;
+
+  }
+  .circle2 {
+    width: 871px;
+    height: 889px;
+    background: #EEB722;
+    border-radius: 50%;
+
+  }
+
+
+  .triangle-topright {
+    width: 0;
+    height: 0;
+    transform:  scaleX(-1);
+    border-width: 100px 500px 0px 0px;
+    border-color: #EEB722 transparent transparent transparent;
+  }
+
+
+  @media (max-width: 1400px){
+
+    .swiper-blur-container::before,
+    .swiper-blur-container::after{
+        width: 350px;
+    }
+  }
+  @media (max-width: 1023px){
+
+    .triangle-bottomleft{
+      border-width: 100px 500px 0 0;
+    }
+    .swiper-blur-container::before,
+    .swiper-blur-container::after{
+        width: 200px;
+    }
+    .tlsize{
+      font-size: 20rem;
+    }
+    .circle{
+      width: 771px;
+      height: 689px;
+    }
+  }
+  @media (max-width: 767px){
+
+    .tlsize{
+      font-size: 15rem;
+    }
+    h2{
+      font-size: 2.5rem;
+    }
+    .circle2{
+      width: 471px;
+      height: 489px;
+    }
+
+  }
+  @media (max-width: 640px){
+    .triangle-bottomleft{
+      border-width: 50px 300px 0 0;
+    }
+    .triangle-topright{
+      border-width: 50px 300px 0px 0px;
+    }
+    .tlsize{
+
+      font-size: 10rem;
+    }
+
+  }
+
+  .fontweight{
+    font-weight: 1000;
+  }
