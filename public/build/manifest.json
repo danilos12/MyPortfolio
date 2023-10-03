@@ -1,0 +1,114 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-aa9f6d39.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-09eed7a4.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.jsx": {
+    "assets": [
+      "assets/pngegg-4e502ec9.png",
+      "assets/point_up-49d8d88e.png",
+      "assets/Vectary texture-f08a0710.png",
+      "assets/mylogo-f19e8e1e.png",
+      "assets/handcursor-08910f5e.png",
+      "assets/react-1d5b7448.png",
+      "assets/HTML-b7817ea6.png",
+      "assets/css-d3b865cf.png",
+      "assets/js-48d02175.png",
+      "assets/node-488d480d.png",
+      "assets/tailwind-e5e18457.png",
+      "assets/figma-a09270e5.png",
+      "assets/mysql-a0b8b444.png"
+    ],
+    "css": [
+      "assets/app-09eed7a4.css"
+    ],
+    "file": "assets/app-1eb3bea6.js",
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  },
+  "resources/js/assets/HTML.png": {
+    "file": "assets/HTML-b7817ea6.png",
+    "src": "resources/js/assets/HTML.png"
+  },
+  "resources/js/assets/Vectary texture.png": {
+    "file": "assets/Vectary texture-f08a0710.png",
+    "src": "resources/js/assets/Vectary texture.png"
+  },
+  "resources/js/assets/analysis.png": {
+    "file": "assets/analysis-d0c9cadf.png",
+    "src": "resources/js/assets/analysis.png"
+  },
+  "resources/js/assets/api.png": {
+    "file": "assets/api-4d9842cc.png",
+    "src": "resources/js/assets/api.png"
+  },
+  "resources/js/assets/business-removebg-preview.png": {
+    "file": "assets/business-removebg-preview-f09d3416.png",
+    "src": "resources/js/assets/business-removebg-preview.png"
+  },
+  "resources/js/assets/css.png": {
+    "file": "assets/css-d3b865cf.png",
+    "src": "resources/js/assets/css.png"
+  },
+  "resources/js/assets/down.png": {
+    "file": "assets/down-527afe65.png",
+    "src": "resources/js/assets/down.png"
+  },
+  "resources/js/assets/expand.png": {
+    "file": "assets/expand-40b9d5a8.png",
+    "src": "resources/js/assets/expand.png"
+  },
+  "resources/js/assets/figma.png": {
+    "file": "assets/figma-a09270e5.png",
+    "src": "resources/js/assets/figma.png"
+  },
+  "resources/js/assets/handcursor.png": {
+    "file": "assets/handcursor-08910f5e.png",
+    "src": "resources/js/assets/handcursor.png"
+  },
+  "resources/js/assets/js.png": {
+    "file": "assets/js-48d02175.png",
+    "src": "resources/js/assets/js.png"
+  },
+  "resources/js/assets/mylogo.png": {
+    "file": "assets/mylogo-f19e8e1e.png",
+    "src": "resources/js/assets/mylogo.png"
+  },
+  "resources/js/assets/mysql.png": {
+    "file": "assets/mysql-a0b8b444.png",
+    "src": "resources/js/assets/mysql.png"
+  },
+  "resources/js/assets/node.png": {
+    "file": "assets/node-488d480d.png",
+    "src": "resources/js/assets/node.png"
+  },
+  "resources/js/assets/pngegg.png": {
+    "file": "assets/pngegg-4e502ec9.png",
+    "src": "resources/js/assets/pngegg.png"
+  },
+  "resources/js/assets/point_up.png": {
+    "file": "assets/point_up-49d8d88e.png",
+    "src": "resources/js/assets/point_up.png"
+  },
+  "resources/js/assets/ranking.png": {
+    "file": "assets/ranking-8c39adc3.png",
+    "src": "resources/js/assets/ranking.png"
+  },
+  "resources/js/assets/react.png": {
+    "file": "assets/react-1d5b7448.png",
+    "src": "resources/js/assets/react.png"
+  },
+  "resources/js/assets/responsive.png": {
+    "file": "assets/responsive-20ef61d3.png",
+    "src": "resources/js/assets/responsive.png"
+  },
+  "resources/js/assets/tailwind.png": {
+    "file": "assets/tailwind-e5e18457.png",
+    "src": "resources/js/assets/tailwind.png"
+  }
+}

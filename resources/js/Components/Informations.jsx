@@ -44,7 +44,7 @@ const Informations = ({titles,subtitle,infos}) => {
                   ease: [0, 0.71, 0.2, 1.01]
 
                 }}
-              className="w-1/4 md:w-1/2 text-center"><span>{infos}</span>
+              className="w-1/2 md:w-[80vw] md:text-xs text-center"><span>{infos}</span>
               </motion.div>
     </>
   )

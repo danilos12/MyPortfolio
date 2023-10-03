@@ -6,6 +6,7 @@ import Side from "./Side"
 import Right from "./Right"
 import SetUp from "./SetUp";
 import Info from "./Informations"
+import Linkss from "./NavLink"
 export  {
     Navbar,
     Sets,
@@ -15,4 +16,5 @@ export  {
     Right,
     SetUp,
     Info,
+    Linkss,
 }

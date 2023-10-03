@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { mylogo, handpointer } from '@/assets';
-import { Link } from 'react-router-dom';
+import { Linkss } from '.';
 import Hamburger from 'hamburger-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import $ from 'jquery';
@@ -56,13 +56,7 @@ const Navbar = () => {
 
     const formData = new FormData(e.target);
 
-    // const data = {
-    //   name: formData.get('names'),
-    //   email: formData.get('emails'),
-    //   message: formData.get('messages')
-    // };
 
-    // console.log(data);
     axios.post('/{any}/contact', formData)
     .then((response) => {
       console.log(response.data);
@@ -80,24 +74,28 @@ const Navbar = () => {
   return (
     <>
       <div className='w-full p-8 bg-black text-white flex font-bold'>
-        <div className="w-full ml-12">
-          <img className='rounded-full w-12 h-12' src={mylogo} alt="sample" />
+        <div className="w-full  ">
+          <img className='rounded-full w-12 h-12 ml-[3vw]' src={mylogo} alt="sample" />
         </div>
         <div className="w-full md:flex hidden justify-end items-center ">
           <div className=" bg-[#EEB722] rounded-lg">
             <Hamburger toggled={isOpen} color='black' rounded toggle={setOpen} />
           </div>
         </div>
-        {isOpen && <div className=' w-1/4 bg-gray-400 h-[20vh] fixed top-[10%] right-10'>Your content here</div>}
-        <div className="w-full space-x-16 justify-center items-center flex md:hidden ">
-          <Link className='hover:border-b border-yellow-500' to="/"><h5>INTRO</h5></Link>
-          <Link className='hover:border-b border-yellow-500' to="/about"><h5>WHO</h5></Link>
-          <Link className='hover:border-b border-yellow-500' to="/tools"><h5>TOOLS</h5></Link>
-          <div className="">
-            <button onClick={openContact} className='text-[0.8rem] p-2 rounded-lg bg-[#EEB722] text-black '>Contact Me</button>
+        {isOpen && <div className='z-30 w-[90vw] bg-black h-[40vh] fixed top-[13vh] right-[5vw] hidden md:flex'>
+          <div className="w-full ">
+          <Linkss
+              openContact={openContact}
+          />
           </div>
-        </div>
+          </div>}
+          <div    className='md:hidden w-full h-full'>
+              <Linkss
 
+              openContact={openContact}
+
+              />
+      </div>
       </div>
 
       <AnimatePresence>
@@ -132,22 +130,23 @@ const Navbar = () => {
 
                 <div className="w-1/2">
 
-                <form onSubmit={Submission} className='flex flex-col items-center space-y-6 cursor-none text-black'>
+                <form onSubmit={Submission} className='flex flex-col items-center space-y-6 cursor-none  text-black'>
                   <input name='names' className='rounded-lg cursor-none' type="text" placeholder='Name' />
                   <input name='emails' className='rounded-lg cursor-none' type="text" placeholder='Email' />
-                  <textarea name="messages" cols="50" rows="5" placeholder='Message' className='cursor-none'></textarea>
+                  <textarea name="messages" cols="50" rows="5" placeholder='Message' className='cursor-none w-full'></textarea>
                   <motion.input
                     whileHover={{scale: 1.1}}
                     transition={{
                       duration: 1.5,
                       ease: [0, 0.71, 0.2, 1.01]
                     }}
-                    type="submit" className='p-2 w-[8vw] border bg-yellow-500 rounded-lg cursor-none'
+                    type="submit" className='p-2 w-[8vw] border bg-yellow-500 md:w-full rounded-lg cursor-none'
                   />
                 </form>
 
                 </div>
                 <div className="text-black nintendo hover:text-red-500 text-center w-3/4 h-[10vh]  relative">
+
                 <motion.img
                 animate={{ cursorPosition }}
                 transition={{
@@ -167,7 +166,7 @@ const Navbar = () => {
                        ease: [0, 0.71, 0.2, 1.01]
 
                      }}
-                className="">
+                className="md:text-[10px] ">
                   <span>andredandayaganon@gmail.com</span>
                 </motion.div>
               </div>

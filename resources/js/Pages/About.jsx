@@ -67,7 +67,7 @@ const About = () => {
 
              }}
 
-        className="w-full h-[50%] md:h-[80%]  flex justify-center   md:items-end ">
+        className=" w-full h-[50vh] md:h-[70vh]  flex justify-center   md:items-end ">
 
                     <img className='scale-[2.5] md:scale-[1] mb-[18vh] sepia z-20' src={point} alt="" />
 

@@ -4,7 +4,7 @@ const Setdown = ({ label, images, className }) => {
     return (
         <>
             <div className="
-            flex flex-col relative   justify-center  items-center ">
+            flex flex-col relative bottom-12  justify-center  items-center ">
 
 
                 <img

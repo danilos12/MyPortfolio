@@ -142,7 +142,7 @@ const Tools = () => {
               className=" mySwiper h-[50%] "
             >
               <SwiperSlide  >
-                <div className="border rounded-2xl h-full">
+                <div className="border rounded-2xl h-full ">
                 <Setdown
 
                 label={"HTML"}
