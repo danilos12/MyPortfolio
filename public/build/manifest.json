@@ -1,11 +1,11 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-aa9f6d39.css",
+    "file": "assets/app-b7f3821a.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-09eed7a4.css",
+    "file": "assets/app-a2b94f8d.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.jsx": {
@@ -25,9 +25,9 @@
       "assets/mysql-a0b8b444.png"
     ],
     "css": [
-      "assets/app-09eed7a4.css"
+      "assets/app-a2b94f8d.css"
     ],
-    "file": "assets/app-1eb3bea6.js",
+    "file": "assets/app-24163d83.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   },
