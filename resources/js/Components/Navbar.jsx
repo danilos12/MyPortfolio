@@ -7,16 +7,17 @@ import $ from 'jquery';
 import axios from 'axios';
 import toastr from 'toastr';
 import 'toastr/toastr.scss';
-
+import { HashLoader } from 'react-spinners';
 
 toastr.options = {
-  "positionClass": "top-right-center",
+  "positionClass": "toast-top-center",
   "preventDuplicates": true,
   "closeButton": true,
   "progressBar": true
 }
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
+  const [loading,setLoading] = useState(false);
   const [contactme, setContactMe] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const cursorWidth = window.innerWidth;
@@ -53,16 +54,20 @@ const Navbar = () => {
   }
   const Submission = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     const formData = new FormData(e.target);
 
 
     axios.post('/{any}/contact', formData)
     .then((response) => {
+      setLoading(false);
       console.log(response.data);
+      console.log("Success");
       toastr.success('Your form is submitted and he will be informed and Email you back');
+
     })
     .catch((err) => {
+      setLoading(false);
       console.log(err);
       toastr.error("Error");
     });
@@ -73,7 +78,22 @@ const Navbar = () => {
 
   return (
     <>
+
       <div className='w-full p-8 bg-black text-white flex font-bold'>
+
+        {loading &&
+        <div className="fixed top-0 lef-0 w-[100vw] h-[100vh] flex justify-center items-center z-50"><HashLoader
+          color={"#EEB722"}
+          loading={loading}
+          size={50}
+        />
+        </div>
+        }
+
+
+
+
+
         <div className="w-full  ">
           <img className='rounded-full w-12 h-12 ml-[3vw]' src={mylogo} alt="sample" />
         </div>
@@ -110,7 +130,7 @@ const Navbar = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01]
             }}
-            className="w-[90vw] z-40 border border-black bg-white h-[80vh] fixed left-[5vw] rounded-lg p-2 shadow-custom2 top-[15%] block"
+            className="w-[90vw] z-[1] border border-black bg-white h-[80vh] fixed left-[5vw] rounded-lg p-2 shadow-custom2 top-[15%] block"
           >
 
             <div className="w-full p-4 flex justify-end ">
