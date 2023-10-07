@@ -36,6 +36,7 @@
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.8",
     "slick-carousel": "^1.8.1",
+    "socket.io": "^4.7.2",
     "swiper": "^10.2.0",
     "toastr": "^2.1.4"
   },

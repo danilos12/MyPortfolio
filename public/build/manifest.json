@@ -1,11 +1,11 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-4d443349.css",
+    "file": "assets/app-c06f84bb.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-f0528c7e.css",
+    "file": "assets/app-f73f19e3.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.jsx": {
@@ -25,9 +25,9 @@
       "assets/mysql-a0b8b444.png"
     ],
     "css": [
-      "assets/app-f0528c7e.css"
+      "assets/app-f73f19e3.css"
     ],
-    "file": "assets/app-375816cf.js",
+    "file": "assets/app-fcd437ce.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   },
@@ -74,6 +74,10 @@
   "resources/js/assets/js.png": {
     "file": "assets/js-48d02175.png",
     "src": "resources/js/assets/js.png"
+  },
+  "resources/js/assets/maintenance.png": {
+    "file": "assets/maintenance-85ad6455.png",
+    "src": "resources/js/assets/maintenance.png"
   },
   "resources/js/assets/mylogo.png": {
     "file": "assets/mylogo-f19e8e1e.png",

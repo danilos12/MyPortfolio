@@ -10,13 +10,7 @@ class SendEmail extends Controller
 {
     public function sendMail(Request $request){
 
-        // $datas = [
-        //     'Name'=> 'Danilo',
-        //     'Email'=>'sample@gmail.com',
-        //     'Messages'=>'lalalaallaalalalal'
-        // ];
-
-
+     
 
        $data = $request->all();
             try{

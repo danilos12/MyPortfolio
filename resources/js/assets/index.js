@@ -6,7 +6,7 @@ import yehey from "./business-removebg-preview.png"
 import vector3 from "./Vectary texture.png"
 import mylogo from "./mylogo.png"
 import handpointer from "./handcursor.png"
-
+import maintenance from "./maintenance.png"
 
 import reacts from "./react.png"
 import HTML from "./HTML.png"
@@ -49,5 +49,6 @@ export {
     Figma,
     Mysql,
     handpointer,
+    maintenance,
 
 }
