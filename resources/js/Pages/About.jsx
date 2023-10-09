@@ -1,5 +1,6 @@
 import {React,useState,useEffect} from 'react'
-import { Navbar,Info } from '@/Components'
+import { Navbar,Info,Minis, Objectos } from '@/Components'
+
 import { point } from '@/assets'
 
 import { motion } from 'framer-motion'
@@ -17,16 +18,16 @@ const About = () => {
     };
   }, []);
   return (
-    <div className='flex h-screen  flex-col general-font  '>
-        <section className="">
+    <div className='flex h-screen w-full  flex-col general-font   overflow-x-hidden'>
+        <section className="h-[10vh]">
             <Navbar/>
         </section>
-        <section className='w-full h-[90vh] flex flex-col '>
-          <div className="h-[h-90vh] overflow-hidden  relative">
+        <section className='w-full h-[90vh] flex flex-col  -z-[4]'>
+          <div className=" overflow-hidden  relative">
             <div className="absolute flex justify-center w-full">
 
                   </div>
-        <div className="w-full flex flex-col items-center justify-center  h-1/2">
+        <div className="w-full flex flex-col items-center justify-center  h-1/2 -">
 
                 <motion.div
                 initial={{opacity:0,y:100}}
@@ -38,7 +39,7 @@ const About = () => {
                   ease: [0, 0.71, 0.2, 1.01]
 
                 }}
-                className="bg-red-500 relative flex justify-center  mt-[25vh] ">
+                className=" relative flex justify-center  mt-[25vh] ">
                 <motion.div
 
                   whileInView={{y:scrollY > 300 ? 400 : 900, opacity: scrollY < 300 ? 0 : 1}}
@@ -49,8 +50,8 @@ const About = () => {
                     ease: [0, 0.71, 0.2, 1.01]
 
                   }}
-                  className=" absolute  mix-blend-multiply circle2 z-10"></motion.div>
-                  <div className="bg-white">
+                  className=" absolute  mix-blend-multiply circle2  "></motion.div>
+                  <div className="">
                    <span className='tlsize font-bold'>WHO?</span>
                    </div>
                 </motion.div>
@@ -76,19 +77,30 @@ const About = () => {
           </div>
         </section>
 
-        <section className='h-[100vh] w-full relative flex flex-col justify-center items-center bg-yellow-400'>
-        <div className="absolute  right-0 triangle-bottomleft2 Z-0"></div>
+        <section className='h-[100%] w-full  flex flex-col  border-t border-gray-200'>
+          <div className="w-full flex justify-center items-center  h-[20vh]">
+             <Minis/>
 
-        <div className="h-[90vh] w-full  flex flex-col items-center justify-center space-y-8 z-10">
-            <Info
-            titles={"WHOAMI?"}
-            infos={"I'm a web developer proficient in React and Tailwind CSS, specializing in crafting visually impressive and responsive websites. Together, we can breathe life into your online vision, offering an engaging and user-friendly experience that distinguishes you. Let's work together to make your website shine in the digital landscape."}
-            />
+          </div>
 
+        <div className="h-[80%]  flex flex-row md:flex-col  items-center justify-start md:space-y-0 z-10">
+          <div className="w-1/2 md:w-full h-full flex flex-col items-center justify-center  space-y-8 border-r border-gray-200">
+                <Info
+                  titles={"WHOAMI?"}
+                  infos={"I'm a web developer proficient in React & Laravel, specializing in crafting visually impressive and responsive websites. Together, we can breathe life into your online vision, offering an engaging and user-friendly experience that distinguishes you. Let's work together to make your website shine in the digital landscape."}
+                  />
+          </div>
+
+          <div className=" w-1/2 md:w-full h-full  flex  items-center justify-center space-y-8 z-10 ">
+                <Objectos/>
+
+          </div>
         </div>
 
 
+
         </section>
+
     </div>
   )
 }

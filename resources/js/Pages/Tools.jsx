@@ -25,10 +25,10 @@ const Tools = () => {
       <div className="w-full z-10">
         <Navbar />
       </div>
-      <div className="h-[100%] w-full  relative">
-        <div className="absolute right-0 triangle-topright"></div>
+      <div className="h-[100%] w-full  ">
 
-        <div className="absolute left-0 bottom-[0%] triangle-bottomleft"></div>
+
+
 
             <motion.div
               initial={{opacity:0,y:30}}
@@ -43,7 +43,7 @@ const Tools = () => {
 
 
             className="w-full flex flex-col justify-center items-center h-[30%]">
-              <h1 className="font-bold">Tools</h1>
+              <h1 className="font-bold">SKILLS</h1>
               <h3 className="font-bold">&lt;/&gt;</h3>
 
             </motion.div>

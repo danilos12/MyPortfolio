@@ -1,33 +1,21 @@
 import {React,useEffect,useState} from 'react'
-import { Navbar,Info } from '@/Components'
-import { hand,down } from '@/assets'
+import { Navbar,Info,Minis,Sample } from '@/Components'
+import { hand } from '@/assets'
 import { motion,useMotionValue,useTransform  } from "framer-motion"
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Datas } from '@/Constants/SocialLinks';
 
 const Intro = () => {
   const [scrollPosition,setScrollPosition] = useState(0);
-  const [isHovered, setHovered] = useState(false);
+
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
 
   const rotateX = useTransform(cursorY, [0, window.innerHeight], [-30, 30]);
   const rotateY = useTransform(cursorX, [0, window.innerWidth], [-80, 80]);
 
-  const handleMouseMove = (e) => {
-    cursorX.set(e.clientX);
-    cursorY.set(e.clientY);
-  }
 
-  const HoverStart = () =>{
-    setHovered(true);
-  }
-
-  const HoverEnd = () => {
-    setHovered(false);
-  }
   const handleScroll = () =>{
     setScrollPosition(window.scrollY);
   }
@@ -39,12 +27,12 @@ const Intro = () => {
 
 
   return (
-    <div className='flex flex-col  w-full relative  h-screen overflow-y-scroll m-0 p-0'>
+    <div className='flex flex-col  w-full relative  h-screen overflow-y-scroll overflow-x-hidden m-0 p-0'>
 
 <section className='w-full h-[10vh] z-30'>
             <Navbar/>
       </section>
-        <section  className="h-[100vh]   w-full flex-col flex   ">
+        <section  className="h-[90vh]   w-full flex-col flex   border-b border-gray-200">
           <motion.div
              initial={{opacity:0,x:-30}}
              whileInView={{opacity:1,x:0}}
@@ -54,15 +42,15 @@ const Intro = () => {
                ease: [0, 0.71, 0.2, 1.01]
 
              }}
-          className='absolute flex flex-col items-center space-y-6 top-[50%] left-14 z-30'>
+          className='absolute flex flex-col items-center space-y-6 top-[50%] left-14 z-[50] md:hidden'>
 
-            <a href="https://www.facebook.com/profile.php?id=100063950439131">
+            <a href={Datas.Linkses.Facebook}>
               <FontAwesomeIcon className='w-6 h-6' icon={faFacebook} />
             </a>
-            <a href="https://github.com/danilos12?tab=projects">
+            <a href={Datas.Linkses.Github}>
             <FontAwesomeIcon className='w-6 h-6' icon={faGithub} />
               </a>
-              <a href="https://www.instagram.com/daniloskxzs/">
+              <a href={Datas.Linkses.Instagram}>
               <FontAwesomeIcon className='w-6 h-6' icon={faInstagram} />
               </a>
           </motion.div>
@@ -107,16 +95,15 @@ const Intro = () => {
 
 
 
-            <div style={{perspective:2000}}   className="w-full  h-[90vh]  z-10    flex  justify-center md:justify-center items-end  shadow-custom2 ">
+            <div    className="w-full  h-[90vh]  z-10    flex  justify-center md:justify-center items-end  shadow-custom2 ">
 
 
             <motion.img
-              onMouseMove={handleMouseMove}
+
               initial={{opacity:0, scale:0}}
-                style={{ cursorX,cursorY,rotateX,rotateY, zIndex: 100}}
-                onHoverStart={HoverStart}
-                onHoverEnd={HoverEnd}
-                whileInView={{rotateX: isHovered ? rotateX:0, rotateY: isHovered ? rotateY:0,opacity:1,scale:1 }}
+                style={{ cursorX,cursorY, zIndex: 100}}
+
+                whileInView={{opacity:1,scale:1 }}
                 viewport={{once:false, amount:1}}
                 transition={{
                   duration:1,
@@ -131,17 +118,29 @@ const Intro = () => {
 
         </div>
         </section>
-        <section className="w-full h-[100vh] flex relative flex-col bg-yellow-400 ">
+        <section className="w-full h-[100vh] flex  flex-col md:space-y-8">
 
-        <div className="absolute  right-0 triangle-bottomleft2"></div>
+        <div className="w-full flex justify-center items-end  h-[20vh]">
+           <Minis/>
 
-          <div className="h-[90vh] flex flex-col items-center justify-center space-y-8 z-10">
+
+        </div>
+
+          <div className="h-[80%]  flex flex-row md:flex-col  items-center justify-start md:space-y-0 z-10">
+
+                  <div className="w-1/2 md:w-full h-3/4 flex flex-col space-y-6 justify-center items-center border-r border-gray-200">
                   <Info
                   titles={"CodeCrafted:"}
                   subtitle={"Your Developer Extraordinaire"}
-                  infos={"From global enterprises to emerging ventures, I specialize in crafting impactful digital experiences tailored to your unique vision."}
+                  infos={"Revolutionize your online presence with my expertise in creating dynamic digital experiences. Whether you're a global powerhouse or a burgeoning startup, I excel at shaping web solutions that embody your distinct vision. Elevate your brand with my unparalleled web development services"}
                   />
+                </div>
+                <div className="w-1/2 md:w-full h-3/4 flex justify-center items-center  ">
+                    <div className="">
+                  <Sample/>
+                  </div>
 
+                </div>
 
           </div>
 

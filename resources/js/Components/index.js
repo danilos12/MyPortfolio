@@ -7,6 +7,10 @@ import Right from "./Right"
 import SetUp from "./SetUp";
 import Info from "./Informations"
 import Linkss from "./NavLink"
+import Minis from "./Mini"
+import Sample from "./Sample";
+import Objectos from "./Objecto";
+
 export  {
     Navbar,
     Sets,
@@ -17,4 +21,7 @@ export  {
     SetUp,
     Info,
     Linkss,
+    Minis,
+    Sample,
+    Objectos
 }

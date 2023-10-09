@@ -3,25 +3,7 @@ import { motion } from 'framer-motion'
 const Informations = ({titles,subtitle,infos}) => {
   return (
     <>
-         <div className="flex flex-col items-center space-y-4">
-                  <motion.div
-                    initial={{opacity:0,x:-30}}
-                    whileInView={{opacity:1,x:0}}
-                    transition={{
-                      duration:2,
-                      delay:0.3,
-                      ease: [0, 0.71, 0.2, 1.01]
 
-                    }}
-
-                  className=""><span className='font-bold' >CRAFTED DESIGN</span></motion.div>
-                  <motion.div
-                  initial={{width:0}}
-                  whileInView={{width:'40%',rotate:170}}
-                  viewport={{once:false}}
-                  transition={{duration:1}}
-                  className="rectangle"></motion.div>
-              </div>
 
               <motion.div
                    initial={{opacity:0,y:30}}
@@ -32,7 +14,7 @@ const Informations = ({titles,subtitle,infos}) => {
                     ease: [0, 0.71, 0.2, 1.01]
 
                   }}
-              className="text-center "><h2 className='font-bold leading-[1.1]'>{titles}<br/>{subtitle}</h2>
+              className="text-left md:text-center w-3/4 md:pl-0  "><h2 className='font-bold leading-[1.1]'>{titles}<br/>{subtitle}</h2>
               </motion.div>
 
               <motion.div
@@ -44,7 +26,7 @@ const Informations = ({titles,subtitle,infos}) => {
                   ease: [0, 0.71, 0.2, 1.01]
 
                 }}
-              className="w-1/2 md:w-[80vw] md:text-xs text-center"><span>{infos}</span>
+              className="w-3/4  md:p-12 md:w-[100%] md:text-xs text-left md:text-center "><span>{infos}</span>
               </motion.div>
     </>
   )
