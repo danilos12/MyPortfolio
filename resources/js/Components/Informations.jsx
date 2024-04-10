@@ -14,7 +14,7 @@ const Informations = ({titles,subtitle,infos}) => {
                     ease: [0, 0.71, 0.2, 1.01]
 
                   }}
-              className="text-left md:text-center w-3/4 md:pl-0  "><h2 className='font-bold leading-[1.1]'>{titles}<br/>{subtitle}</h2>
+              className="text-left md:text-center w-3/4 md:pl-0  "><h2 className='font-bold  leading-[1.1]'>{titles}<br/>{subtitle}</h2>
               </motion.div>
 
               <motion.div
@@ -26,7 +26,7 @@ const Informations = ({titles,subtitle,infos}) => {
                   ease: [0, 0.71, 0.2, 1.01]
 
                 }}
-              className="w-3/4  md:p-12 md:w-[100%] md:text-xs text-left md:text-center "><span>{infos}</span>
+              className="w-3/4  md:p-12 md:w-[100%] md:text-xs text-left md:text-center font-thin "><span>{infos}</span>
               </motion.div>
     </>
   )

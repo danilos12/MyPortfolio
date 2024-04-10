@@ -10,6 +10,10 @@ import Linkss from "./NavLink"
 import Minis from "./Mini"
 import Sample from "./Sample";
 import Objectos from "./Objecto";
+import Particle from "./Particles";
+import ParticleContainer from "./ParticleContainer";
+import Servicebox from "./ServicesBox"
+
 
 export  {
     Navbar,
@@ -23,5 +27,9 @@ export  {
     Linkss,
     Minis,
     Sample,
-    Objectos
+    Objectos,
+    Particle,
+    ParticleContainer,
+    Servicebox
+
 }

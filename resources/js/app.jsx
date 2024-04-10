@@ -6,7 +6,7 @@ import Routing from './Client-Route/Routing';
 
 
 ReactDOM.createRoot(document.getElementById('app')).render(
-    <div className=" general-font">
+    <div className="Outfitfont text-white bg-[#07041B]">
             <Routing />
     </div>
 

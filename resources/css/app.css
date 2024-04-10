@@ -2,22 +2,80 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
 
-.general-font {
-    font-family: 'Oswald', sans-serif;
+.Outfitfont {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+
 }
 
 
 .nintendo {
   font-family: 'Press Start 2P', cursive;
 }
+.transparent-bg {
+    background-color: transparent /* White color with 50% transparency */
+}
+.gradient-border {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #C23BFF, #7F69FC,#1EA9F7) 1;
+
+
+}
+
+.border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(to right bottom, #C23BFF, #7F69FC, #1EA9F7) 1;
+    border-image-slice: 1;
+    border-radius: 1.5rem;
+  }
+.border-gradient-l {
+    border-left: 2px solid;
+    border-image: linear-gradient(to bottom, #C23BFF, #7F69FC, #1EA9F7) 1;
+    border-image-slice: 1;
+    border-radius: 1.5rem;
+  }
+.border-gradient-r {
+    border-left: 2px solid;
+    border-image: linear-gradient(to left, #C23BFF, #7F69FC, #1EA9F7) 1;
+    border-image-slice: 1;
+    border-radius: 1.5rem;
+  }
+.border-gradient2 {
+
+    border-image: linear-gradient(to bottom, #C23BFF, #7F69FC, #1EA9F7) 1;
+    border-image-slice: 1;
+    border-left: 2px solid;;
+  }
+
+  .textgradient{
+        background: linear-gradient(to left, #C23BFF, #7F69FC, #1EA9F7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+  }
+  .textgradient2{
+        background: linear-gradient(to left, #C23BFF, #7F69FC, #01d7f3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 500px ;
+        filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.5));
+  }
+  .textgradient3{
+        background: linear-gradient(to left, #C23BFF, #7F69FC, #01d7f3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.5));
+  }
+
 
 .tlsize{
   font-size: 30rem;
@@ -82,7 +140,7 @@ h5{
 
     height: 6px;
 
-    background: black;
+    background: white;
   }
 
   .triangle-bottomleft {
@@ -194,3 +252,27 @@ h5{
   .fontweight{
     font-weight: 1000;
   }
+
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #07041B; /* Color of the scrollbar track */
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #C23BFF, #7F69FC,#8b098b); /* Color of the scrollbar handle */
+    border-radius: 5px; /* Radius of the scrollbar handle */
+
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: blue; /* Color of the scrollbar handle on hover */
+  }
+

@@ -112,7 +112,7 @@ const Sample = () => {
   }, []);
 
   return (
-    <div id="container" className="w-full h-screen  flex items-center justify-center "></div>
+    <div id="container" className="w-full h-screen flex items-center justify-center "></div>
   );
 }
 

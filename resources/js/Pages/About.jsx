@@ -1,7 +1,7 @@
 import {React,useState,useEffect} from 'react'
-import { Navbar,Info,Minis, Objectos } from '@/Components'
+import { Navbar,Info,Minis, Objectos,ParticleContainer } from '@/Components'
 
-import { point } from '@/assets'
+import { point,QuestionMark } from '@/assets'
 
 import { motion } from 'framer-motion'
 const About = () => {
@@ -22,63 +22,41 @@ const About = () => {
         <section className="h-[10vh]">
             <Navbar/>
         </section>
-        <section className='w-full h-[90vh] flex flex-col  -z-[4]'>
-          <div className=" overflow-hidden  relative">
-            <div className="absolute flex justify-center w-full">
-
-                  </div>
-        <div className="w-full flex flex-col items-center justify-center  h-1/2 -">
-
-                <motion.div
-                initial={{opacity:0,y:100}}
-                whileInView={{opacity:1,y:0}}
-                viewport={{once:false}}
-                transition={{
-                  duration:1.5,
-                  delay:1,
-                  ease: [0, 0.71, 0.2, 1.01]
-
-                }}
-                className=" relative flex justify-center  mt-[25vh] ">
-                <motion.div
-
-                  whileInView={{y:scrollY > 300 ? 400 : 900, opacity: scrollY < 300 ? 0 : 1}}
-                  viewport={{once:false,amount:0}}
-                  transition={{
-                    duration:1.5,
-                    delay:1.3,
-                    ease: [0, 0.71, 0.2, 1.01]
-
-                  }}
-                  className=" absolute  mix-blend-multiply circle2  "></motion.div>
-                  <div className="">
-                   <span className='tlsize font-bold'>WHO?</span>
-                   </div>
-                </motion.div>
-
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+            <ParticleContainer count={100} />
         </div>
-        <motion.div
-             initial={{opacity:0,y:100}}
-             whileInView={{opacity:1,y:0}}
-             viewport={{once:false}}
-             transition={{
-               duration:1.5,
-               delay:1.5,
-               ease: [0, 0.71, 0.2, 1.01]
-
-             }}
-
-        className=" w-full h-[50vh] md:h-[70vh]  flex justify-center   md:items-end ">
-
-                    <img className='scale-[2.5] md:scale-[1] mb-[18vh] sepia z-20' src={point} alt="" />
+        <section className='w-full  relative flex flex-col'>
 
 
-                </motion.div>
-          </div>
-        </section>
+            <div className="h-[90vh] flex justify-center">
+            <motion.div
+            initial={{opacity:0,y:-30}}
+            whileInView={{opacity:1,y:0}}
+            transition={{
+            duration:3,
+            delay:0.3,
+            ease: [0, 0.71, 0.2, 1.01]
 
-        <section className='h-[100%] w-full  flex flex-col  border-t border-gray-200'>
-          <div className="w-full flex justify-center items-center  h-[20vh]">
+            }}>
+            <span className='font-bold text-left text-9xl textgradient3 mt-12'>WHOAMI?</span>
+            </motion.div>
+            <img src={QuestionMark} alt="point" className='w-[500px] h-auto absolute bottom-0'/>
+            <img src={point} alt="point" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'/>
+            <img src={point} alt="point" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'style={{ position: 'absolute', bottom: 0, width: '100%', height: '100px', background: 'linear-gradient(to bottom, transparent, white)' }} />
+
+
+
+
+            </div>
+
+
+
+
+
+                </section>
+        <section className='h-[100vh] w-full  flex flex-col  '>
+
+          <div className="w-full flex justify-center items-center  mb-8">
              <Minis/>
 
           </div>
@@ -87,8 +65,14 @@ const About = () => {
           <div className="w-1/2 md:w-full h-full flex flex-col items-center justify-center  space-y-8 border-r border-gray-200">
                 <Info
                   titles={"WHOAMI?"}
-                  infos={"I'm a web developer proficient in React & Laravel, specializing in crafting visually impressive and responsive websites. Together, we can breathe life into your online vision, offering an engaging and user-friendly experience that distinguishes you. Let's work together to make your website shine in the digital landscape."}
+                  infos={"I'm a passionate and creative individual with a love for technology and a knack for problem-solving. As a lifelong learner, I thrive on challenges that push the boundaries of my skills. My journey in the world of web development has been an exciting one, and I'm constantly inspired by the endless possibilities it offers."}
                   />
+                  <div className="w-3/4 ">
+                    <button  className='text-[0.8rem] p-1 bg-transparent h-[30px] w-[150px] border-gradient'>
+                        Download MyResume
+                    </button>
+                </div>
+
           </div>
 
           <div className=" w-1/2 md:w-full h-full  flex  items-center justify-center space-y-8 z-10 ">
@@ -100,6 +84,8 @@ const About = () => {
 
 
         </section>
+
+
 
     </div>
   )

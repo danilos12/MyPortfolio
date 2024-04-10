@@ -48,7 +48,7 @@ const Contact = () => {
 
 
                         </div>
-                        <div className="flex w-full">
+                        <div className="flex w-full ">
                             <div className="w-full flex justify-center  ">
                                     <button className='rounded-2xl p-3 w-[30%] text-black font-extrabold bg-yellow-500' type='submit'>Submit</button>
 
