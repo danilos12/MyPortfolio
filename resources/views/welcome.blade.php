@@ -6,8 +6,8 @@
 
 
         <title>DaDevCoder</title>
-        <link href="{{ asset('resources/css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('node_modules/toastr/toastr.scss') }}" rel="stylesheet">
+        <link href="{{ mix('resources/css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('node_modules/toastr/toastr.scss') }}" rel="stylesheet">
 
 
 
