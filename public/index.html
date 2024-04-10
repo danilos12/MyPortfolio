@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html >
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DaDevCoder</title>
+    <!-- Use absolute paths to specify the locations of CSS and JavaScript files -->
+    <link href="/resources/css/app.css" rel="stylesheet">
+    <link href="/node_modules/toastr/toastr.css" rel="stylesheet">
+</head>
+<body>
+    <div class="" id="app"></div>
 
-
-        <title>DaDevCoder</title>
-        <link href="/resources/css/app.css" rel="stylesheet">
-        <link href="/node_modules/toastr/toastr.scss" rel="stylesheet">
-
-
-
-
-        <script type="module" >
-    import RefreshRuntime from '/@react-refresh'
-
-    RefreshRuntime.injectIntoGlobalHook(window)
-    window.$RefreshReg$ = () => {}
-    window.$RefreshSig$ = () => (type) => type
-    window.__vite_plugin_react_preamble_installed__ = true
-</script>
-<script type="module" src="/@vite/client"></script><script type="module" src="/resources/js/app.jsx"></script>
-<script type="module" src=""></script><script type="module" src="/resources/js/app.jsx"></script>
-    </head>
-    <body>
-        <div class="" id="app"></div>
-    </body>
+    <!-- Include React and ReactDOM for development -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Include Vite React Refresh for development -->
+    <script src="https://unpkg.com/@vite/react-refresh"></script>
+    <!-- Include Vite client for development -->
+    <script src="https://unpkg.com/@vite/client"></script>
+    <!-- Use absolute path to specify the location of app.jsx -->
+    <script type="module" src="/resources/js/app.jsx"></script>
+    <script type="module" src="/resources/js/hello.js"></script>
+</body>
 </html>

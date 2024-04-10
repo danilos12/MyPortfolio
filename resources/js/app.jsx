@@ -1,13 +1,15 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import '../css/app.css'; // Corrected import path
 
-import '../css/app.css'
-
-import ReactDOM from 'react-dom/client';
 import Routing from './Client-Route/Routing';
 
-
-ReactDOM.createRoot(document.getElementById('app')).render(
+const App = () => {
+  return (
     <div className="Outfitfont text-white bg-[#07041B]">
-            <Routing />
+      <Routing />
     </div>
+  );
+};
 
-);
+ReactDOM.createRoot(document.getElementById('app')).render(<App />);
