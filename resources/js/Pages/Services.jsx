@@ -4,16 +4,20 @@ import { box,codicon,VR,CMSicon } from '@/assets'
 import { motion,useMotionValue,useTransform  } from "framer-motion"
 const Services = () => {
   return (
-    <div>
-        <section className='w-full h-[10vh]'><Navbar/></section>
+    <div className='md:flex md:flex-col  w-full md:relative  md:h-screen overflow-y-scroll overflow-x-hidden  '>
+
+        <section className='w-full h-[10%] z-50'><Navbar/></section>
+
+        <div className='fixed w-[100%] h-[100%]'>
+            <ParticleContainer count={100} />
+        </div>
+
 
         <section className='w-full h-[90vh] flex flex-col items-center space-y-16'>
 
 
-        <div style={{ position: 'fixed', width: '100%', height: '100%' }}>
-            <ParticleContainer count={100} />
-        </div>
-        <img src={VR} alt="Virtual Reality" className='mix-blend-multiply absolute bottom-0 left-0 ' loading='lazy'/>
+
+        <img src={VR} alt="Virtual Reality" className='mix-blend-multiply fixed bottom-0 left-0 z-10' loading='lazy'/>
         <motion.div
         initial={{opacity:0,y:-30}}
         whileInView={{opacity:1,y:0}}
@@ -31,7 +35,7 @@ const Services = () => {
             </div>
             </motion.div>
 
-            <div className="w-ful flex space-x-12 justify-center z-10">
+            <div className="w-ful flex md:flex-col space-x-12 md:space-y-12 justify-center z-10">
 
 
                     <motion.div
@@ -101,6 +105,7 @@ const Services = () => {
 
 
     </div>
+
   )
 }
 

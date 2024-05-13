@@ -6,17 +6,18 @@ import { motion,useMotionValue,useTransform  } from "framer-motion"
 
 const TechStack = () => {
   return (
-    <div>
-        <section className='h-[10vh]'>
+    <div className='md:flex md:flex-col  w-full md:relative  md:h-screen overflow-y-scroll overflow-x-hidden  '>
+        <section className='h-[10vh] z-50'>
             <Navbar/>
         </section>
 
-        <section className='w-full '>
-        <div style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
+
+        <div className='fixed w-[100%] h-[100%]'>
             <ParticleContainer count={100} />
         </div>
-            <div className="w-full flex h-[90vh]">
-                <div className=" flex flex-col justify-center items-center  w-1/2 space-y-6 z-10">
+        <section className='w-full relative '>
+            <div className="w-full md:justify-center items-center md:flex-col flex h-[90vh] ">
+                <div className=" flex flex-col justify-center items-center w-1/2 space-y-6 ">
                 <motion.div
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
@@ -27,36 +28,38 @@ const TechStack = () => {
 
                     }}>
 
-                    <div className="">
-                    <h1 className='font-bold textgradient3'>TECH STACK</h1>
-                    <h1 className='font-bold text-center textgradient3'>{`</>`}</h1>
+                    <div className="font-bold text-center md:text-4xl text-6xl flex flex-col">
+                    <span className=' textgradient3 '>TECH STACK</span>
+                    <span className=' textgradient3'>{`</>`}</span>
                     </div>
-                    <div className="grid grid-cols-4 gap-4 gap-x-12 " loading="lazy">
-                        <img className='w-[49px] h-[44px]  object-contain transform transition-transform hover:scale-110' src={HTML} alt="" />
-                        <img className='w-[70px] h-[57px] object-cover pb-4 object-center transform transition-transform hover:scale-110' src={CSS} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={JS} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={reacts} alt="" />
-                        <img className='w-[49px] h-[30px] object-contain object-center transform transition-transform hover:scale-110' src={NODE} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={Tailwind} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={Figma} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={Mysql} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={laravel} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={php} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={postman} alt="" />
-                        <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={wordpress} alt="" />
-
-                    </div>
+                    <div className="grid grid-cols-4 gap-7 gap-x-16 mb-12" loading="lazy">
+                    <img className='image-item' src={HTML} alt="" />
+                    <img className='image-item' src={CSS} alt="" />
+                    <img className='image-item' src={JS} alt="" />
+                    <img className='image-item' src={reacts} alt="" />
+                    <img className='image-item' src={NODE} alt="" />
+                    <img className='image-item' src={Tailwind} alt="" />
+                    <img className='image-item' src={Figma} alt="" />
+                    <img className='image-item' src={Mysql} alt="" />
+                    <img className='image-item' src={laravel} alt="" />
+                    <img className='image-item' src={php} alt="" />
+                    <img className='image-item' src={postman} alt="" />
+                    <img className='image-item' src={wordpress} alt="" />
+                </div>
                     </motion.div>
                 </div>
 
-
-                <div className=" flex items-center w-1/2">
+                <div    className='fixed md:left-[30%] md:top-[30%] right-[100px] '>
                 <motion.div
                     animate={{ y: [-40, 40, -40, 40, -40], transition: { duration: 20, repeat: Infinity } }}
-                    className='fixed  right-[100px] '
+
                 >
+
                     <img className="w-3/4 h-3/4 object-contain object-center" src={Astronaut2} alt="Astronaut" loading='lazy'/>
+
                 </motion.div>
+                </div>
+                <div className="flex items-center w-1/2">
 
 
                 <motion.div
@@ -68,14 +71,14 @@ const TechStack = () => {
                       ease: [0, 0.71, 0.2, 1.01]
 
                     }}>
-                            <div className=" w-full h-[70%] grid border-l-2 border-gradient2 font-light z-10">
-                                    <div className="flex flex-col w-full items-center">
-                                        <img className='w-[132px] h-[123px] rounded' src={Philip} alt="" loading='lazy'/>
+                            <div className=" w-full h-[70%] grid space-y-6  border-gradient2 font-light z-10">
+                                    <div className="flex flex-col w-full items-center space-y-6">
+                                        <img className='w-[132px] md:w-[110px] md:h-[90px] h-[123px] rounded' src={Philip} alt="" loading='lazy'/>
                                         <span>Philip Roth</span>
                                     </div>
                                     <div className="flex flex-col items-center space-y-12">
-                                        <p className='text-center w-[60%]'>These are the tools that I use for building business websites.  I've personally curated my portfolio with the latest technology and ensure that your business stands out among others with seamless design and functionality </p>
-                                        <div className="flex flex-col items-center">
+                                        <p className='text-center w-[60%] md:w-full'>These are the tools that I use for building business websites.  I've personally curated my portfolio with the latest technology and ensure that your business stands out among others with seamless design and functionality </p>
+                                        <div className="flex flex-col items-center md:hidden">
                                         <img src={Comma} alt="" loading='lazy'/>
                                         <p>“Business has only two functions - marketing and innovation”</p>
                                         </div>

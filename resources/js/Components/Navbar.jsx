@@ -82,7 +82,7 @@ const Navbar = () => {
       <div className='w-full p-8 flex font-light drop-shadow-md text-white '>
 
         {loading &&
-        <div className="fixed top-0 lef-0 w-[100vw] h-[100vh] flex justify-center items-center z-50">
+        <div className="fixed top-0 lef-0 w-[100vw] h-[100vh] flex justify-center items-center ">
           <HashLoader
           color={"#EEB722"}
           loading={loading}
@@ -100,15 +100,15 @@ const Navbar = () => {
         </div>
         <div className="w-full md:flex hidden justify-end items-center ">
           <div className="  rounded-lg">
-            <Hamburger toggled={isOpen} color='black' rounded toggle={setOpen} />
+            <Hamburger toggled={isOpen} color='white' className="textgradient" rounded toggle={setOpen} />
           </div>
         </div>
-        {isOpen && <div className=' w-[90vw] bg-white h-[40vh] fixed top-[13vh] right-[5vw] hidden md:flex '>
-          <div className="w-full ">
+        {isOpen && <div  className=' w-[90vw] bg-[#090523]  h-[40vh] fixed top-[13vh] right-[5vw] hidden md:flex '>
+
           <Linkss
               openContact={openContact}
           />
-          </div>
+
           </div>}
           <div    className='md:hidden w-full '>
               <Linkss
@@ -117,7 +117,7 @@ const Navbar = () => {
 
               />
       </div>
-      <div className="w-full flex justify-end items-center  pr-16 ">
+      <div className="w-full flex justify-end items-center  pr-16 md:hidden">
     <button onClick={openContact} className='text-[0.8rem] p-1 bg-transparent h-[30px] w-[120px] border-gradient'>
         Contact Me
     </button>
@@ -148,7 +148,7 @@ const Navbar = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01]
             }}
-            className="w-[950px] z-[50] bg-black h-[50vh] fixed left-[25vw] rounded-lg p-2 shadow-custom2 top-[25vh] block"
+            className="w-[950px]  bg-black h-[50vh] fixed left-[25vw] rounded-lg p-2 shadow-custom2 top-[25vh] block"
           >
  {/* bg-[#0D0D0D]  */}
             <div className="w-full p-4 flex justify-end ">

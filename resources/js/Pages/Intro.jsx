@@ -27,7 +27,7 @@ const Intro = () => {
 
 
   return (
-    <div className='flex flex-col  w-full relative  h-screen overflow-y-scroll overflow-x-hidden m-0 p-0 '>
+    <div className='flex flex-col  w-full relative  h-screen overflow-y-scroll overflow-x-hidden  '>
 
         <section className='w-full h-[10vh] z-30'>
                     <Navbar/>
@@ -35,32 +35,12 @@ const Intro = () => {
         <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
             <ParticleContainer count={100} />
         </div>
-        <section  className="   w-full flex p-6">
+        <section  className="w-full flex p-6">
 
-          {/* <motion.div
-             initial={{opacity:0,x:-30}}
-             whileInView={{opacity:1,x:0}}
-             transition={{
-               duration:2,
-               delay:0.3,
-               ease: [0, 0.71, 0.2, 1.01]
 
-             }}
-          className='fixed flex flex-col items-center space-y-6 top-[50%] left-14 z-[50] md:hidden'>
 
-            <a href={Datas.Linkses.Facebook}>
-              <FontAwesomeIcon className='w-6 h-6' icon={faFacebook} />
-            </a>
-            <a href={Datas.Linkses.Github}>
-            <FontAwesomeIcon className='w-6 h-6' icon={faGithub} />
-              </a>
-              <a href={Datas.Linkses.Instagram}>
-              <FontAwesomeIcon className='w-6 h-6' icon={faInstagram} />
-              </a>
-          </motion.div> */}
-
-          <div className="h-[90vh] flex flex-col justify-center items-center w-1/2 z-10  overflow-x-auto">
-                <div className="w-[80%]">
+          <div className="h-[90vh] flex flex-col justify-center items-center md:w-full w-1/2 z-10  ">
+                <div className="w-[80%] font-bold md:text-center text-left md:text-5xl text-8xl ">
                 <motion.div
                     initial={{opacity:0,x:-30}}
                     whileInView={{opacity:1,x:0}}
@@ -70,10 +50,10 @@ const Intro = () => {
                       ease: [0, 0.71, 0.2, 1.01]
 
                     }}>
-                    <span className='font-bold text-left text-8xl textgradient '>STOP! CHOOSE THE RIGHT DEVELOPER!</span>
+                    <span className=' textgradient'>STOP! CHOOSE THE RIGHT DEVELOPER!</span>
                     </motion.div>
                 </div>
-                <div className="w-[80%] mt-8">
+                <div className="w-[80%] md:text-center text-left font-thin mt-8">
                 <motion.div
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
@@ -83,7 +63,7 @@ const Intro = () => {
                       ease: [0, 0.71, 0.2, 1.01]
 
                     }}>
-                <span className='font-thin text-left'>You’ll end up losing much revenue and starting over from scratch. Let's stop making it happen! (Not an AGENCY but a passionate Developer!!)</span>
+                <span>You’ll end up losing much revenue and starting over from scratch. Let's stop making it happen! (Not an AGENCY but a passionate Developer!!)</span>
                 </motion.div>
                 </div>
 
@@ -95,12 +75,12 @@ const Intro = () => {
         </div>
 
 
-          <div className="h-[90vh] flex rotate-[-40.32deg] mix-blend-overlay flex-col justify-center w-1/2 z-10">
+          <div className="md:absolute md:left-[10vw] h-[90vh] md:block flex  rotate-[-40.32deg] mix-blend-overlay flex-col justify-center md:w-full w-1/2 z-10">
           <motion.div
            animate={{ y: [-40, 40, -40, 40,-40], transition: { duration: 20, repeat: Infinity } }}
             style={{ display: 'inline-block' }} // Ensure motion works properly
             >
-            <img className="w-full h-full mix-blend-overlay object-cover object-center" src={astronaut} alt="Astronaut" loading="lazy" />
+            <img className="w-full h-full md:w-[100vw] md:[100vh] mix-blend-overlay object-cover object-center" src={astronaut} alt="Astronaut" loading="lazy" />
             </motion.div>
         </div>
 

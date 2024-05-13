@@ -18,17 +18,17 @@ const About = () => {
     };
   }, []);
   return (
-    <div className='flex h-screen w-full  flex-col general-font   overflow-x-hidden'>
-        <section className="h-[10vh]">
+    <div className='flex h-screen w-full  flex-col general-font   overflow-x-hidden '>
+        <section className="h-[10vh] z-50">
             <Navbar/>
         </section>
-        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+        <div  style={{ position: 'relative', width: '100%', height: '100%'  }}>
             <ParticleContainer count={100} />
         </div>
-        <section className='w-full  relative flex flex-col'>
+        <section className='w-full relative flex flex-col'>
 
 
-            <div className="h-[90vh] flex justify-center">
+            <div  className="h-[90vh] md:flex-col flex justify-center items-center w-full ">
             <motion.div
             initial={{opacity:0,y:-30}}
             whileInView={{opacity:1,y:0}}
@@ -38,11 +38,15 @@ const About = () => {
             ease: [0, 0.71, 0.2, 1.01]
 
             }}>
-            <span className='font-bold text-left text-9xl textgradient3 mt-12'>WHOAMI?</span>
+                <div className="font-bold text-left md:text-5xl text-9xl mt-12 w-[100%]  ">
+                    <span className='textgradient3'>WHOAMI?</span>
+                </div>
+
             </motion.div>
-            <img src={QuestionMark} alt="point" loading="lazy" className='w-[500px] h-auto absolute bottom-0'/>
-            {/* <img src={point} alt="point" loading="lazy" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'/> */}
-            {/* <img src={point} alt="point" loading="lazy" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'style={{ position: 'absolute', bottom: 0, width: '100%', height: '100px', background: 'linear-gradient(to bottom, transparent, white)' }} /> */}
+            <div className="">
+                <img src={QuestionMark} alt="point" loading="lazy" className='w-[500px] md:hidden h-auto md:relative  absolute  bottom-0'/>
+            </div>
+
 
 
 

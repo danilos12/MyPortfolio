@@ -29,6 +29,17 @@
 
 
 }
+.image-item {
+    width: 48px;
+    height: 44px;
+    object-fit: contain; /* or object-cover depending on your preference */
+    object-position: center; /* adjust as needed */
+    transition: transform 0.3s ease; /* adding transition for hover effect */
+}
+
+.image-item:hover {
+    transform: scale(1.1); /* increasing scale on hover */
+}
 
 .border-gradient {
     border: 2px solid;
@@ -52,9 +63,17 @@
 
     border-image: linear-gradient(to bottom, #C23BFF, #7F69FC, #1EA9F7) 1;
     border-image-slice: 1;
-    border-left: 2px solid;;
+    border-left: 2px solid;
   }
-
+@media screen and (max-width: 764px) {
+    .border-gradient2 {
+        border-left: none;
+    }
+    .image-item{
+        width: 25px;
+        height: 25px;
+    }
+}
   .textgradient{
         background: linear-gradient(to left, #C23BFF, #7F69FC, #1EA9F7);
         -webkit-background-clip: text;
