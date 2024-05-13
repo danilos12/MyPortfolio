@@ -36,10 +36,9 @@ const Objecto = () => {
 
 
 
-    // Initialize GLTFLoader
     const loader = new GLTFLoader();
 
-    // Load the model
+
     loader.load('./workbench.glb', (gltf) => {
       const model = gltf.scene;
       scene.add(model);
@@ -49,9 +48,7 @@ const Objecto = () => {
       model.rotation.set(0, 4.7, 0);
 
 
-      // const controller = new OrbitControls(camera, renderer.domElement);
 
-      // CONTROLLER START MOUSE DRAGGING
       var canvas = renderer.domElement;
       canvas.addEventListener('mousedown', onMouseDown);
 
@@ -92,9 +89,7 @@ const Objecto = () => {
         $(document).off('mousemove',onMouseMove);
         $(document).off('mouseup',onMouseUp);
       }
-// END OF CONTROLLER
 
-      // Light
       const light = new THREE.DirectionalLight(0xffffff, 5);
       light.position.set(1, 1, 3).normalize();
       scene.add(light);

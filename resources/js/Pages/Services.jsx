@@ -13,7 +13,7 @@ const Services = () => {
         <div style={{ position: 'fixed', width: '100%', height: '100%' }}>
             <ParticleContainer count={100} />
         </div>
-        <img src={VR} alt="Virtual Reality" className='mix-blend-multiply absolute bottom-0 left-0 '/>
+        <img src={VR} alt="Virtual Reality" className='mix-blend-multiply absolute bottom-0 left-0 ' loading='lazy'/>
         <motion.div
         initial={{opacity:0,y:-30}}
         whileInView={{opacity:1,y:0}}

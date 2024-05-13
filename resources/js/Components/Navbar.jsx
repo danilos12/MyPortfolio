@@ -140,8 +140,8 @@ const Navbar = () => {
         {contactme && (
 
           <motion.div
-            initial={{ scaleY: 0, opacity: 0 }}
-            animate={{ scaleY: 1, opacity: 1 }}
+            initial={{  opacity: 0 }}
+            animate={{  opacity: 1 }}
             exit={{  opacity: 0 }}
             transition={{
               duration: 2,
@@ -202,11 +202,10 @@ const Navbar = () => {
               <div className="border-gradient-l flex flex-col justify-center items-center  space-y-4">
                 <span>Follow Me</span>
                 <div className="flex space-x-5">
-                    <img src={FacebookIcon} alt="" />
-                    <img src={TwitterIcon} alt="" />
-                    <img src={GithubIcon} alt="" />
-                    <img src={LinkedInIcon} alt="" />
-                    <img src={SlackIcon} alt="" />
+                    <a href="https://www.facebook.com/profile.php?id=100063950439131"><img src={FacebookIcon} alt="" /></a>
+                    <a href="https://github.com/danilos12"><img src={GithubIcon} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/andre-dan-dayaganon-837117294/"><img src={LinkedInIcon} alt="" /></a>
+                    <a href="https://codebility.slack.com/team/U064SRVAGMQ"><img src={SlackIcon} alt="" /></a>
                 </div>
               </div>
 

@@ -83,7 +83,7 @@ const Intro = () => {
                       ease: [0, 0.71, 0.2, 1.01]
 
                     }}>
-                <span className='font-thin text-left'>You’ll end up losing much revenue and starting over from scratch. Let's stop making it happen!</span>
+                <span className='font-thin text-left'>You’ll end up losing much revenue and starting over from scratch. Let's stop making it happen! (Not an AGENCY but a passionate Developer!!)</span>
                 </motion.div>
                 </div>
 
@@ -100,7 +100,7 @@ const Intro = () => {
            animate={{ y: [-40, 40, -40, 40,-40], transition: { duration: 20, repeat: Infinity } }}
             style={{ display: 'inline-block' }} // Ensure motion works properly
             >
-            <img className="w-full h-full mix-blend-overlay object-cover object-center" src={astronaut} alt="Astronaut" />
+            <img className="w-full h-full mix-blend-overlay object-cover object-center" src={astronaut} alt="Astronaut" loading="lazy" />
             </motion.div>
         </div>
 

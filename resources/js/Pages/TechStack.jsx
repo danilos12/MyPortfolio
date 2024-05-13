@@ -31,7 +31,7 @@ const TechStack = () => {
                     <h1 className='font-bold textgradient3'>TECH STACK</h1>
                     <h1 className='font-bold text-center textgradient3'>{`</>`}</h1>
                     </div>
-                    <div className="grid grid-cols-4 gap-4 gap-x-12 ">
+                    <div className="grid grid-cols-4 gap-4 gap-x-12 " loading="lazy">
                         <img className='w-[49px] h-[44px]  object-contain transform transition-transform hover:scale-110' src={HTML} alt="" />
                         <img className='w-[70px] h-[57px] object-cover pb-4 object-center transform transition-transform hover:scale-110' src={CSS} alt="" />
                         <img className='w-[48px] h-[44px] object-contain object-center transform transition-transform hover:scale-110' src={JS} alt="" />
@@ -55,7 +55,7 @@ const TechStack = () => {
                     animate={{ y: [-40, 40, -40, 40, -40], transition: { duration: 20, repeat: Infinity } }}
                     className='fixed  right-[100px] '
                 >
-                    <img className="w-3/4 h-3/4 object-contain object-center" src={Astronaut2} alt="Astronaut" />
+                    <img className="w-3/4 h-3/4 object-contain object-center" src={Astronaut2} alt="Astronaut" loading='lazy'/>
                 </motion.div>
 
 
@@ -70,13 +70,13 @@ const TechStack = () => {
                     }}>
                             <div className=" w-full h-[70%] grid border-l-2 border-gradient2 font-light z-10">
                                     <div className="flex flex-col w-full items-center">
-                                        <img className='w-[132px] h-[123px] rounded' src={Philip} alt="" />
+                                        <img className='w-[132px] h-[123px] rounded' src={Philip} alt="" loading='lazy'/>
                                         <span>Philip Roth</span>
                                     </div>
                                     <div className="flex flex-col items-center space-y-12">
                                         <p className='text-center w-[60%]'>These are the tools that I use for building business websites.  I've personally curated my portfolio with the latest technology and ensure that your business stands out among others with seamless design and functionality </p>
                                         <div className="flex flex-col items-center">
-                                        <img src={Comma} alt="" />
+                                        <img src={Comma} alt="" loading='lazy'/>
                                         <p>“Business has only two functions - marketing and innovation”</p>
                                         </div>
                                     </div>

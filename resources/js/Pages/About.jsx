@@ -40,9 +40,9 @@ const About = () => {
             }}>
             <span className='font-bold text-left text-9xl textgradient3 mt-12'>WHOAMI?</span>
             </motion.div>
-            <img src={QuestionMark} alt="point" className='w-[500px] h-auto absolute bottom-0'/>
-            <img src={point} alt="point" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'/>
-            <img src={point} alt="point" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'style={{ position: 'absolute', bottom: 0, width: '100%', height: '100px', background: 'linear-gradient(to bottom, transparent, white)' }} />
+            <img src={QuestionMark} alt="point" loading="lazy" className='w-[500px] h-auto absolute bottom-0'/>
+            {/* <img src={point} alt="point" loading="lazy" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'/> */}
+            {/* <img src={point} alt="point" loading="lazy" className='w-[500px] h-auto mix-blend-multiply absolute bottom-10 border'style={{ position: 'absolute', bottom: 0, width: '100%', height: '100px', background: 'linear-gradient(to bottom, transparent, white)' }} /> */}
 
 
 
@@ -69,7 +69,10 @@ const About = () => {
                   />
                   <div className="w-3/4 ">
                     <button  className='text-[0.8rem] p-1 bg-transparent h-[30px] w-[150px] border-gradient'>
-                        Download MyResume
+                        <a href="https://drive.google.com/file/d/1Z6v_IQj9l3kngWhccnc6RSbR53sUX89C/view?usp=drive_link">
+                             Download MyResume
+                        </a>
+
                     </button>
                 </div>
 

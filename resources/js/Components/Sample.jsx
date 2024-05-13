@@ -24,6 +24,18 @@ const Sample = () => {
         model.rotation.set(0, 0, 0);
       });
 
+      const highResLoader = new GLTFLoader();
+      highResLoader.load('./earth_stylized_high_poly.glb', (gltf) => {
+        highResModel = gltf.scene;
+        highResModel.position.copy(lowResModel.position);
+        highResModel.rotation.copy(lowResModel.rotation);
+        // Replace low-resolution model with high-resolution one once loaded
+        scene.remove(lowResModel);
+        scene.add(highResModel);
+      });
+
+
+
       // CONTROLLER START MOUSE DRAGGING
       var canvas = renderer.domElement;
       canvas.addEventListener('mousedown', onMouseDown);
