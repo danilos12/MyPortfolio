@@ -10,7 +10,6 @@
   },
   "resources/js/app.jsx": {
     "assets": [
-      "assets/point_up-49d8d88e.png",
       "assets/react-1d5b7448.png",
       "assets/HTML-b7817ea6.png",
       "assets/css-d3b865cf.png",
@@ -36,7 +35,6 @@
       "assets/location-fe273b2c.svg",
       "assets/Emailme-856c78f2.svg",
       "assets/facebook-8df3af8f.svg",
-      "assets/twitter-74beaa87.svg",
       "assets/github-488b1d22.svg",
       "assets/linkedin-1620342f.svg",
       "assets/slack-c78fe348.svg"
@@ -44,7 +42,7 @@
     "css": [
       "assets/app-cf20d6fc.css"
     ],
-    "file": "assets/app-e4f654fb.js",
+    "file": "assets/app-0e7057b0.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   },
