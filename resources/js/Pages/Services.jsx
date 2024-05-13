@@ -28,17 +28,18 @@ const Services = () => {
 
         }}>
 
-            <div className="flex flex-col items-center space-y-6 z-10">
-                <span className='font-bold text-left text-8xl textgradient2'>SERVICES</span>
-                <span className='font-medium text-left text-2xl'>Transforming Your Online Influence</span>
-                <span className='font-medium text-left text-lg text-[#8E8E8E]'>Maximize your marketability and revenue with our game-changing solutions</span>
+            <div className="flex flex-col items-center text-left md:text-center space-y-6 z-20">
+                <span className='font-bold md:text-6xl text-8xl textgradient2'>SERVICES</span>
+                <span className='font-medium md:text-lg text-2xl'>Transforming Your Online Influence</span>
+                <span className='font-medium  text-sm text-[#8E8E8E]'>Maximize your marketability and revenue with our game-changing solutions</span>
             </div>
             </motion.div>
 
-            <div className="w-ful flex md:flex-col space-x-12 md:space-y-12 justify-center z-10">
+            <div className="w-full flex md:flex-col md:space-x-0  space-x-12 md:space-y-6 justify-center items-center  z-20">
 
 
                     <motion.div
+                           className='h-full'
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
                     transition={{
@@ -54,7 +55,9 @@ const Services = () => {
                     message={'I specialize in creating stunning, user-friendly websites that resonate with your audience. I blend aesthetics with functionality, ensuring your website is not only visually appealing but also easy to navigate, responsive, and aligned with your brand identity.'}
                     />
                     </motion.div>
+
                          <motion.div
+                         className='h-full'
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
                     transition={{
@@ -63,6 +66,7 @@ const Services = () => {
                       ease: [0, 0.71, 0.2, 1.01]
 
                     }}>
+
 
                     <Servicebox
                     icons={codicon}
@@ -76,7 +80,10 @@ const Services = () => {
                     />
                     </motion.div>
 
+
+                    <div className="">
                     <motion.div
+                           className='h-full'
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
                     transition={{
@@ -99,6 +106,7 @@ const Services = () => {
                     through my CMS services.`}
                     />
                     </motion.div>
+                    </div>
             </div>
 
         </section>

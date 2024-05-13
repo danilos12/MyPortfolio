@@ -1,11 +1,11 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-09b033eb.css",
+    "file": "assets/app-c452b742.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-bb3d45a6.css",
+    "file": "assets/app-530ac574.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.jsx": {
@@ -40,9 +40,9 @@
       "assets/slack-c78fe348.svg"
     ],
     "css": [
-      "assets/app-bb3d45a6.css"
+      "assets/app-530ac574.css"
     ],
-    "file": "assets/app-491b0b31.js",
+    "file": "assets/app-d3781cb8.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   },

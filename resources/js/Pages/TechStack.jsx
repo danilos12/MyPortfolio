@@ -71,7 +71,7 @@ const TechStack = () => {
                       ease: [0, 0.71, 0.2, 1.01]
 
                     }}>
-                            <div className=" w-full h-[70%] grid space-y-6  border-gradient2 font-light z-10">
+                            <div className=" w-full h-[70%] grid space-y-6  border-gradient2 font-light ">
                                     <div className="flex flex-col w-full items-center space-y-6">
                                         <img className='w-[132px] md:w-[110px] md:h-[90px] h-[123px] rounded' src={Philip} alt="" loading='lazy'/>
                                         <span>Philip Roth</span>
