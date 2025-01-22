@@ -73,7 +73,7 @@ const About = () => {
                   />
                   <div className="w-3/4 ">
                     <button  className='text-[0.8rem] p-1 bg-transparent h-[30px] w-[150px] border-gradient'>
-                        <a href="https://drive.google.com/file/d/1r0EVA4oWWFHZxFWAvYX2UW9ez7PANj2p/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/1x5wrSrmbFEGBuAhUrzyjxSyL8u-A4RAM/view?usp=sharing">
                              Download MyResume
                         </a>
 
