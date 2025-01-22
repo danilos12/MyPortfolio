@@ -1,217 +1,209 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-c452b742.css",
+  "index.html": {
+    "file": "assets/main-D11i35H-.js",
+    "name": "main",
+    "src": "index.html",
     "isEntry": true,
-    "src": "resources/css/app.css"
-  },
-  "resources/js/app.css": {
-    "file": "assets/app-530ac574.css",
-    "src": "resources/js/app.css"
-  },
-  "resources/js/app.jsx": {
-    "assets": [
-      "assets/react-1d5b7448.png",
-      "assets/HTML-b7817ea6.png",
-      "assets/css-d3b865cf.png",
-      "assets/js-48d02175.png",
-      "assets/node-488d480d.png",
-      "assets/tailwind-e5e18457.png",
-      "assets/figma-a09270e5.png",
-      "assets/mysql-a0b8b444.png",
-      "assets/astronaut_floating-171716b2.png",
-      "assets/box-fdc5c0c4.svg",
-      "assets/codeicon-4df4ebe8.svg",
-      "assets/virtual_reality-2e9c3f52.png",
-      "assets/CMSicon-c73bc5f6.svg",
-      "assets/Question-d415a5a6.svg",
-      "assets/laravel-2d7f2816.png",
-      "assets/php-617095a0.png",
-      "assets/postman-bb99d79f.png",
-      "assets/wplogo-646eb7de.png",
-      "assets/Philip-edfdd340.svg",
-      "assets/Astrofloat-edb9a826.svg",
-      "assets/Comma-68f178f4.svg",
-      "assets/PhoneNumber-2f4f58a1.svg",
-      "assets/location-fe273b2c.svg",
-      "assets/Emailme-856c78f2.svg",
-      "assets/facebook-8df3af8f.svg",
-      "assets/github-488b1d22.svg",
-      "assets/linkedin-1620342f.svg",
-      "assets/slack-c78fe348.svg"
-    ],
     "css": [
-      "assets/app-530ac574.css"
+      "assets/main-BPnrmGsL.css"
     ],
-    "file": "assets/app-172e3009.js",
-    "isEntry": true,
-    "src": "resources/js/app.jsx"
+    "assets": [
+      "assets/react-ClMdBwwM.png",
+      "assets/HTML-D36f7mSW.png",
+      "assets/css-Bc0wk8pH.png",
+      "assets/js-B2gqmNKf.png",
+      "assets/node-UAH_WIDV.png",
+      "assets/tailwind-xnK0lD3j.png",
+      "assets/figma-D98RBzwc.png",
+      "assets/mysql-WnfmJy_E.png",
+      "assets/astronaut_floating-ftayqXuD.png",
+      "assets/box-DMaJa88a.svg",
+      "assets/codeicon-B3SjdhYy.svg",
+      "assets/virtual_reality-CH6pkia5.png",
+      "assets/CMSicon-DMFAbon_.svg",
+      "assets/Question-CA3fIWft.svg",
+      "assets/laravel-Dzuxxbhj.png",
+      "assets/php-Bca-31wv.png",
+      "assets/postman-BEH5G0N5.png",
+      "assets/wplogo-VyD6q2KH.png",
+      "assets/Philip-CKmlHl7q.svg",
+      "assets/Astrofloat-CTj7birV.svg",
+      "assets/Comma-BjkUOYG_.svg",
+      "assets/PhoneNumber-ByfW3QCr.svg",
+      "assets/location-D57v5tUs.svg",
+      "assets/Emailme-BDtyznHY.svg",
+      "assets/facebook-BO1l7LMi.svg",
+      "assets/github-C2lR12Hv.svg",
+      "assets/linkedin-DrcNHztd.svg",
+      "assets/slack-wBZxFV0H.svg"
+    ]
   },
   "resources/js/assets/Astrofloat.svg": {
-    "file": "assets/Astrofloat-edb9a826.svg",
+    "file": "assets/Astrofloat-CTj7birV.svg",
     "src": "resources/js/assets/Astrofloat.svg"
   },
   "resources/js/assets/CMSicon.svg": {
-    "file": "assets/CMSicon-c73bc5f6.svg",
+    "file": "assets/CMSicon-DMFAbon_.svg",
     "src": "resources/js/assets/CMSicon.svg"
   },
   "resources/js/assets/Comma.svg": {
-    "file": "assets/Comma-68f178f4.svg",
+    "file": "assets/Comma-BjkUOYG_.svg",
     "src": "resources/js/assets/Comma.svg"
   },
   "resources/js/assets/Emailme.svg": {
-    "file": "assets/Emailme-856c78f2.svg",
+    "file": "assets/Emailme-BDtyznHY.svg",
     "src": "resources/js/assets/Emailme.svg"
   },
   "resources/js/assets/HTML.png": {
-    "file": "assets/HTML-b7817ea6.png",
+    "file": "assets/HTML-D36f7mSW.png",
     "src": "resources/js/assets/HTML.png"
   },
   "resources/js/assets/Philip.svg": {
-    "file": "assets/Philip-edfdd340.svg",
+    "file": "assets/Philip-CKmlHl7q.svg",
     "src": "resources/js/assets/Philip.svg"
   },
   "resources/js/assets/PhoneNumber.svg": {
-    "file": "assets/PhoneNumber-2f4f58a1.svg",
+    "file": "assets/PhoneNumber-ByfW3QCr.svg",
     "src": "resources/js/assets/PhoneNumber.svg"
   },
   "resources/js/assets/Question.svg": {
-    "file": "assets/Question-d415a5a6.svg",
+    "file": "assets/Question-CA3fIWft.svg",
     "src": "resources/js/assets/Question.svg"
   },
   "resources/js/assets/Vectary texture.png": {
-    "file": "assets/Vectary texture-f08a0710.png",
+    "file": "assets/Vectary texture-LpTMzgg-.png",
     "src": "resources/js/assets/Vectary texture.png"
   },
   "resources/js/assets/analysis.png": {
-    "file": "assets/analysis-d0c9cadf.png",
+    "file": "assets/analysis-D-UkTGb3.png",
     "src": "resources/js/assets/analysis.png"
   },
   "resources/js/assets/api.png": {
-    "file": "assets/api-4d9842cc.png",
+    "file": "assets/api-Lv_cOUJP.png",
     "src": "resources/js/assets/api.png"
   },
   "resources/js/assets/astronaut_floating.png": {
-    "file": "assets/astronaut_floating-171716b2.png",
+    "file": "assets/astronaut_floating-ftayqXuD.png",
     "src": "resources/js/assets/astronaut_floating.png"
   },
   "resources/js/assets/box.svg": {
-    "file": "assets/box-fdc5c0c4.svg",
+    "file": "assets/box-DMaJa88a.svg",
     "src": "resources/js/assets/box.svg"
   },
   "resources/js/assets/business-removebg-preview.png": {
-    "file": "assets/business-removebg-preview-f09d3416.png",
+    "file": "assets/business-removebg-preview-CCY9HTxf.png",
     "src": "resources/js/assets/business-removebg-preview.png"
   },
   "resources/js/assets/codeicon.svg": {
-    "file": "assets/codeicon-4df4ebe8.svg",
+    "file": "assets/codeicon-B3SjdhYy.svg",
     "src": "resources/js/assets/codeicon.svg"
   },
   "resources/js/assets/css.png": {
-    "file": "assets/css-d3b865cf.png",
+    "file": "assets/css-Bc0wk8pH.png",
     "src": "resources/js/assets/css.png"
   },
   "resources/js/assets/down.png": {
-    "file": "assets/down-527afe65.png",
+    "file": "assets/down-C0VfgMIh.png",
     "src": "resources/js/assets/down.png"
   },
   "resources/js/assets/expand.png": {
-    "file": "assets/expand-40b9d5a8.png",
+    "file": "assets/expand-mfSKyj-6.png",
     "src": "resources/js/assets/expand.png"
   },
   "resources/js/assets/facebook.svg": {
-    "file": "assets/facebook-8df3af8f.svg",
+    "file": "assets/facebook-BO1l7LMi.svg",
     "src": "resources/js/assets/facebook.svg"
   },
   "resources/js/assets/figma.png": {
-    "file": "assets/figma-a09270e5.png",
+    "file": "assets/figma-D98RBzwc.png",
     "src": "resources/js/assets/figma.png"
   },
   "resources/js/assets/github.svg": {
-    "file": "assets/github-488b1d22.svg",
+    "file": "assets/github-C2lR12Hv.svg",
     "src": "resources/js/assets/github.svg"
   },
   "resources/js/assets/handcursor.png": {
-    "file": "assets/handcursor-08910f5e.png",
+    "file": "assets/handcursor-BPtWO79u.png",
     "src": "resources/js/assets/handcursor.png"
   },
   "resources/js/assets/js.png": {
-    "file": "assets/js-48d02175.png",
+    "file": "assets/js-B2gqmNKf.png",
     "src": "resources/js/assets/js.png"
   },
   "resources/js/assets/laravel.png": {
-    "file": "assets/laravel-2d7f2816.png",
+    "file": "assets/laravel-Dzuxxbhj.png",
     "src": "resources/js/assets/laravel.png"
   },
   "resources/js/assets/linkedin.svg": {
-    "file": "assets/linkedin-1620342f.svg",
+    "file": "assets/linkedin-DrcNHztd.svg",
     "src": "resources/js/assets/linkedin.svg"
   },
   "resources/js/assets/location.svg": {
-    "file": "assets/location-fe273b2c.svg",
+    "file": "assets/location-D57v5tUs.svg",
     "src": "resources/js/assets/location.svg"
   },
   "resources/js/assets/maintenance.png": {
-    "file": "assets/maintenance-85ad6455.png",
+    "file": "assets/maintenance-M5Bmoj24.png",
     "src": "resources/js/assets/maintenance.png"
   },
   "resources/js/assets/mylogo.png": {
-    "file": "assets/mylogo-f19e8e1e.png",
+    "file": "assets/mylogo-IxMJktA1.png",
     "src": "resources/js/assets/mylogo.png"
   },
   "resources/js/assets/mysql.png": {
-    "file": "assets/mysql-a0b8b444.png",
+    "file": "assets/mysql-WnfmJy_E.png",
     "src": "resources/js/assets/mysql.png"
   },
   "resources/js/assets/node.png": {
-    "file": "assets/node-488d480d.png",
+    "file": "assets/node-UAH_WIDV.png",
     "src": "resources/js/assets/node.png"
   },
   "resources/js/assets/php.png": {
-    "file": "assets/php-617095a0.png",
+    "file": "assets/php-Bca-31wv.png",
     "src": "resources/js/assets/php.png"
   },
   "resources/js/assets/pngegg.png": {
-    "file": "assets/pngegg-4e502ec9.png",
+    "file": "assets/pngegg-CgsyttTd.png",
     "src": "resources/js/assets/pngegg.png"
   },
   "resources/js/assets/point_up.png": {
-    "file": "assets/point_up-49d8d88e.png",
+    "file": "assets/point_up--MeJO01L.png",
     "src": "resources/js/assets/point_up.png"
   },
   "resources/js/assets/postman.png": {
-    "file": "assets/postman-bb99d79f.png",
+    "file": "assets/postman-BEH5G0N5.png",
     "src": "resources/js/assets/postman.png"
   },
   "resources/js/assets/ranking.png": {
-    "file": "assets/ranking-8c39adc3.png",
+    "file": "assets/ranking-gQe-3R9w.png",
     "src": "resources/js/assets/ranking.png"
   },
   "resources/js/assets/react.png": {
-    "file": "assets/react-1d5b7448.png",
+    "file": "assets/react-ClMdBwwM.png",
     "src": "resources/js/assets/react.png"
   },
   "resources/js/assets/responsive.png": {
-    "file": "assets/responsive-20ef61d3.png",
+    "file": "assets/responsive-5b5leUW0.png",
     "src": "resources/js/assets/responsive.png"
   },
   "resources/js/assets/slack.svg": {
-    "file": "assets/slack-c78fe348.svg",
+    "file": "assets/slack-wBZxFV0H.svg",
     "src": "resources/js/assets/slack.svg"
   },
   "resources/js/assets/tailwind.png": {
-    "file": "assets/tailwind-e5e18457.png",
+    "file": "assets/tailwind-xnK0lD3j.png",
     "src": "resources/js/assets/tailwind.png"
   },
   "resources/js/assets/twitter.svg": {
-    "file": "assets/twitter-74beaa87.svg",
+    "file": "assets/twitter-DxLeMFy9.svg",
     "src": "resources/js/assets/twitter.svg"
   },
   "resources/js/assets/virtual_reality.png": {
-    "file": "assets/virtual_reality-2e9c3f52.png",
+    "file": "assets/virtual_reality-CH6pkia5.png",
     "src": "resources/js/assets/virtual_reality.png"
   },
   "resources/js/assets/wplogo.png": {
-    "file": "assets/wplogo-646eb7de.png",
+    "file": "assets/wplogo-VyD6q2KH.png",
     "src": "resources/js/assets/wplogo.png"
   }
 }
