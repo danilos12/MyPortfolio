@@ -3,6 +3,7 @@ import laravel from 'laravel-vite-plugin';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+    base: '/MyPortfolio/',
     plugins: [
         laravel({
             input: [
@@ -13,5 +14,9 @@ export default defineConfig({
             refresh: true,
         }),
         react(),
+
     ],
+    build: {
+        outDir: 'dist', // Ensure this matches your GitHub Pages configuration
+    },
 });
