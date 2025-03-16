@@ -46,8 +46,21 @@ import GithubIcon from "./github.svg"
 import LinkedInIcon from "./linkedin.svg"
 import SlackIcon from "./slack.svg"
 
+import ProfilePic from "./DP.jpg"
+import CodebilityCover from "./Projects_Cover/Codebility.png"
+import LMHAccess from "./Projects_Cover/LMH.png"
+import ThatAccountant from "./Projects_Cover/ThatAccountant.png"
+import EPIPhil from "./Projects_Cover/EPI.png"
 
 export {
+
+    // Project Cover Photos
+    CodebilityCover,
+    LMHAccess,
+    ThatAccountant,
+    EPIPhil,
+
+    // End Project Cover Photos
     mylogo,
     expand,
     hand,
@@ -93,7 +106,8 @@ export {
     TwitterIcon,
     GithubIcon,
     LinkedInIcon,
-    SlackIcon
+    SlackIcon,
+    ProfilePic
 
 
 

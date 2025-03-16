@@ -4,20 +4,17 @@ import { box,codicon,VR,CMSicon } from '@/assets'
 import { motion,useMotionValue,useTransform  } from "framer-motion"
 const Services = () => {
   return (
-    <div className='md:flex md:flex-col  w-full md:relative  md:h-screen overflow-y-scroll overflow-x-hidden  '>
+   
 
-        <section className='w-full h-[10%] z-50'><Navbar/></section>
-
-        <div className='fixed w-[100%] h-[100%]'>
-            <ParticleContainer count={100} />
-        </div>
+  
+      
 
 
-        <section className='w-full h-[90vh] flex flex-col items-center space-y-16'>
+        <section className='w-full  h-[90vh] flex flex-col items-center space-y-16'>
 
 
 
-        <img src={VR} alt="Virtual Reality" className='mix-blend-multiply fixed bottom-0 left-0 z-10' loading='lazy'/>
+        {/* <img src={VR} alt="Virtual Reality" className='mix-blend-multiply relative bottom-0 left-0 z-10' loading='lazy'/> */}
         <motion.div
         initial={{opacity:0,y:-30}}
         whileInView={{opacity:1,y:0}}
@@ -29,7 +26,7 @@ const Services = () => {
         }}>
 
             <div className="flex flex-col items-center text-left md:text-center space-y-6 z-20">
-                <span className='font-bold md:text-6xl text-8xl textgradient2'>SERVICES</span>
+                <h2 className='font-bold  leading-[1.1] '>SERVICES</h2>
                 <span className='font-medium md:text-lg text-2xl'>Transforming Your Online Influence</span>
                 <span className='font-medium  text-sm text-[#8E8E8E]'>Maximize your marketability and revenue with our game-changing solutions</span>
             </div>
@@ -112,7 +109,7 @@ const Services = () => {
         </section>
 
 
-    </div>
+   
 
   )
 }

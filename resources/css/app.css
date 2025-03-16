@@ -15,7 +15,12 @@
     font-optical-sizing: auto;
 
 }
+.border-text {
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
 
+}
 
 .nintendo {
   font-family: 'Press Start 2P', cursive;

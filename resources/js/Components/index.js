@@ -13,7 +13,9 @@ import Objectos from "./Objecto";
 import Particle from "./Particles";
 import ParticleContainer from "./ParticleContainer";
 import Servicebox from "./ServicesBox"
-
+import AboutMe from "./AboutMe"
+import Paragraph from "./Paragraph";
+import Cards from "./Cards";
 
 export  {
     Navbar,
@@ -30,6 +32,9 @@ export  {
     Objectos,
     Particle,
     ParticleContainer,
-    Servicebox
+    Servicebox,
+    AboutMe,
+    Paragraph,
+    Cards
 
 }

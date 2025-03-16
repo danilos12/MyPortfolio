@@ -3,7 +3,7 @@ import Intros from "./Intro";
 import TechStack from "./TechStack";
 import Services from "./Services";
 import Tools from "./Tools";
-
+import Projects from "./Projects";
 
 
 import CameraRig from "./CameraRig";
@@ -13,5 +13,6 @@ export {
     TechStack,
     Services,
     Tools,
-    CameraRig
+    CameraRig,
+    Projects
 }

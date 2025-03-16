@@ -5,8 +5,8 @@ const Routing = () => {
   return (
     <Router>
     <Routes>
-      <Route path="/" element={<Intros />} />
-      <Route path="/about" element={<Abouts />} />
+      <Route path="/intro" element={<Intros />} />
+
       <Route path="/techstack" element={<TechStack />} />
 
       <Route path="/services" element={<Services />} />

@@ -79,7 +79,7 @@ const Navbar = () => {
   return (
     <>
 
-      <div className='w-full p-8 flex font-light drop-shadow-md text-white '>
+      <div className='bg-[#07041B] w-full p-8 flex font-light drop-shadow-md text-white '>
 
         {loading &&
         <div className="fixed top-0 lef-0 w-[100vw] h-[100vh] flex justify-center items-center ">

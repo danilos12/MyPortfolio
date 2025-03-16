@@ -7,16 +7,16 @@ import { motion,useMotionValue,useTransform  } from "framer-motion"
 const TechStack = () => {
   return (
     <div className='md:flex md:flex-col  w-full md:relative  md:h-screen overflow-y-scroll overflow-x-hidden  '>
-        <section className='h-[10vh] z-50'>
-            <Navbar/>
-        </section>
+   
 
 
-        <div className='fixed w-[100%] h-[100%]'>
-            <ParticleContainer count={100} />
-        </div>
         <section className='w-full relative '>
-            <div className="w-full md:justify-center items-center md:flex-col flex h-[90vh] ">
+        <div className="font-bold text-center md:text-4xl text-6xl flex flex-col">
+                    <span >TECH STACK</span>
+            
+                    </div>
+            <div className="w-full md:justify-center items-center md:flex-col flex h-[55vh] ">
+         
                 <div className=" flex flex-col justify-center items-center w-1/2 space-y-6 ">
                 <motion.div
                     initial={{opacity:0,y:30}}
@@ -28,10 +28,7 @@ const TechStack = () => {
 
                     }}>
 
-                    <div className="font-bold text-center md:text-4xl text-6xl flex flex-col">
-                    <span className=' textgradient3 '>TECH STACK</span>
-                    <span className=' textgradient3'>{`</>`}</span>
-                    </div>
+                 
                     <div className="grid grid-cols-4 gap-7 gap-x-16 mb-12" loading="lazy">
                     <img className='image-item' src={HTML} alt="" />
                     <img className='image-item' src={CSS} alt="" />
@@ -71,17 +68,17 @@ const TechStack = () => {
                       ease: [0, 0.71, 0.2, 1.01]
 
                     }}>
-                            <div className=" w-full h-[70%] grid space-y-6  border-gradient2 font-light ">
+                            <div className=" w-full h-[70%] p-6 grid space-y-6  border-gradient2 font-light ">
                                     <div className="flex flex-col w-full items-center space-y-6">
                                         <img className='w-[132px] md:w-[110px] md:h-[90px] h-[123px] rounded' src={Philip} alt="" loading='lazy'/>
                                         <span>Philip Roth</span>
                                     </div>
-                                    <div className="flex flex-col items-center space-y-12">
-                                        <p className='text-center w-[60%] md:w-full'>These are the tools that I use for building business websites.  I've personally curated my portfolio with the latest technology and ensure that your business stands out among others with seamless design and functionality </p>
+                                    <div className="flex flex-col items-center space-y-6">
                                         <div className="flex flex-col items-center md:hidden">
-                                        <img src={Comma} alt="" loading='lazy'/>
+                                
                                         <p>“Business has only two functions - marketing and innovation”</p>
                                         </div>
+                                        <p className='text-[#8E8E8E] text-sm text-center w-[60%] md:w-full'>These are the tools that I use for building business websites.  I've personally curated my portfolio with the latest technology and ensure that your business stands out among others with seamless design and functionality </p>
                                     </div>
                             </div>
 
