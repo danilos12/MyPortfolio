@@ -4,7 +4,8 @@ import { React, useEffect,useState } from 'react';
 import * as THREE from 'three';
 import $ from 'jquery';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js";
+// import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 const Objecto = () => {
   const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth <= 768);
   useEffect(() => {
